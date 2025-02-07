@@ -28,7 +28,7 @@ const favoritosSlice = createSlice({
   name: 'favoritos',
   initialState,
   reducers: {
-    addFavorito: (state, action: PayloadAction<any>) => {
+    addFavorito: (state, action: PayloadAction<Character>) => {
       state.favoritos.push(action.payload);
     },
     removeFavorito: (state, action: PayloadAction<number>) => {
