@@ -3,15 +3,14 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 import Image from "next/image";
-
 export default function Favoritos() {
   const favoritos = useSelector(
     (state: RootState) => state.favoritos.favoritos
   );
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-100 p-4">
-      <div className="max-w-6xl w-full p-6 bg-white rounded-lg shadow-lg">
+    <div className="h-auto flex justify-center items-center bg-gray-100 p-2">
+      <div className="max-w-6xl w-full p-4 bg-white rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
           Favoritos
         </h2>

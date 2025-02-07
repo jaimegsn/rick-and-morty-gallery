@@ -4,8 +4,8 @@ import Favoritos from "./components/Favoritos/Favoritos";
 export default function Home() {
   return (
     <div>
-      <CharacterList />
       <Favoritos />
+      <CharacterList />
     </div>
   );
 }
