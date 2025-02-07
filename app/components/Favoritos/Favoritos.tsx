@@ -2,6 +2,7 @@
 
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
+import Image from "next/image";
 
 export default function Favoritos() {
   const favoritos = useSelector(
@@ -20,9 +21,11 @@ export default function Favoritos() {
               key={fav.id}
               className="bg-gray-50 border border-gray-200 rounded-lg p-4 flex flex-col items-center shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <img
+              <Image
                 src={fav.image}
                 alt={fav.name}
+                width={100}
+                height={100}
                 className="w-32 h-32 object-cover rounded-full mb-4"
               />
               <p className="text-center text-lg font-semibold text-gray-700 mb-4">
